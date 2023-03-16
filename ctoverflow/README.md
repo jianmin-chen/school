@@ -1,0 +1,1 @@
+* Research methods: Usually utilizing direct coordinates. Occasional estimates

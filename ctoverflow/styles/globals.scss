@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body,
+html {
+    @apply m-0 p-0;
+}
+
+.timeline-item {
+    @apply border-l px-4 relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: -5px;
+        left: -5px;
+        width: 10px;
+        height: 10px;
+        @apply bg-slate-200 rounded-full;
+    }
+}
