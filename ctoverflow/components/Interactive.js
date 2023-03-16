@@ -100,7 +100,7 @@ export default function Interactive({ data }) {
                             </p>
                             <p>
                                 <a
-                                    href="https://github.com/jianmin-chen/school"
+                                    href="https://github.com/jianmin-chen/school/tree/main/ctoverflow"
                                     target="_blank">
                                     View source
                                 </a>
