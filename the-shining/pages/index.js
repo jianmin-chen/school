@@ -10,7 +10,7 @@ function MagicBall() {
             "Too deep to get out.",
             "Poison.",
             "Be careful, doc..."
-        ];
+        ].filter(q => q !== quote);
         setQuote(quotes[Math.floor(Math.random() * quotes.length)]);
     };
 
@@ -37,7 +37,7 @@ export default function Index() {
                 <img className="background" src="/background.png" />
                 <h1 className="special mt-4">The Shining Times</h1>
                 <div className="flex justify-between px-7">
-                    <p>News without the unnecessary drama</p>
+                    <p>New England news without the unnecessary drama</p>
                     <p>Monday February 8, 1976</p>
                 </div>
                 <div className="grid grid-cols-2 p-4">
@@ -45,7 +45,7 @@ export default function Index() {
                         <div className="border-b border-neutral-400 p-7">
                             <h2>
                                 Teacher gets fired for allegedly beating up
-                                student while drunk
+                                student
                             </h2>
                             <p>
                                 <span className="ml-4" /> A local teacher at
@@ -75,6 +75,7 @@ export default function Index() {
                                 Overlook hotel explodes in mysterious accident
                             </h2>
                             <p>
+                                <span className="ml-4" />
                                 The Overlook hotel, a remote hotel in Colorado
                                 popular among celebrities seeking seclusion -
                                 such as millionaire Horace Derwent, has
@@ -85,12 +86,14 @@ export default function Index() {
                                 the actual cause.
                             </p>
                             <p>
+                                <span className="ml-4" />
                                 The hotel is rumored to be notorious for various
                                 accidents, including gang altercations in the
                                 1940s, although such rumors have not been
                                 proved.
                             </p>
                             <p>
+                                <span className="ml-4" />
                                 According to Stuart Ullman, "No one has been
                                 hurt."
                             </p>
@@ -98,7 +101,15 @@ export default function Index() {
                                 <i>&gt; More on page A2</i>
                             </p>
                         </div>
-                        <div className="note"></div>
+                        <div className="note">
+                            <img src="/note.png" />
+                            <h2>09/11/1975</h2>
+                            <p>
+                                Searching for a new caretaker at the Overlook
+                                Hotel! Please apply in person and ask for Stuart
+                                Ullman.
+                            </p>
+                        </div>
                     </div>
                     <div className="p-7">
                         <div className="p-7 border-b border-neutral-400">
@@ -156,7 +167,27 @@ export default function Index() {
                         </div>
                         <div className="p-7  note">
                             <img src="/note.png" />
-                            <h2></h2>
+                            <h2>07/10/1974</h2>
+                            <p>
+                                We are sorry to inform you that as of
+                                07/10/1974, you'll no longer be employed at
+                                Overlook Hotel. As discussed, we think this is
+                                the best decision, because [redacted]. You will
+                                be given two weeks severance pay to find a new
+                                source of employment.
+                            </p>
+                            <p>
+                                <span className="ml-4" /> Per our NDA agreement,
+                                you are not allowed to discuss the circumstances
+                                under which you have been terminated. Failure to
+                                abide by the terms you signed at the start of
+                                your employment will lead to legal action.
+                            </p>
+                            <p className="signature">
+                                And we would hate for anything to happen, right?
+                                Let's not create any more trouble.
+                            </p>
+                            <p className="signature text-right">Stuart</p>
                         </div>
                     </div>
                 </div>
@@ -177,14 +208,22 @@ export default function Index() {
                                 unpredictable
                             </h2>
                             <p>
-                                On Writing is Stephen King’s part writing guide,
-                                part memoir. King keeps it relatively humorous,
-                                but occasionally adds some of the dark backstory
-                                behind some of the books he’s written. Notably?
-                                I can think of two as I write this book review:
-                                getting hit by a van in 1999 and his addictions.
-                                While getting hit by a van may seem like the
-                                more interesting of the two
+                                <span className="ml-4" />
+                                Weather in the Midwest has been quite terrible,
+                                to say the east. Reports warn of another
+                                potential blizzard coming to the Midwest, around
+                                the Colorado region. Air travel is expected to
+                                be delayed, as wind speeds are expected to be
+                                abnormally high. Accidents have already been
+                                reported among United, American, and other
+                                airlines canceling flights to Denver.
+                            </p>
+                            <p>
+                                <span className="ml-4" /> The Southeast, which
+                                is typically unaffected by weather in the
+                                Midwest, is also seeing slightly abnormal
+                                weather, so make to dress warm! This weather is
+                                certainly supernatural.
                             </p>
                         </div>
                         <div className="border-b border-neutral-400 p-7">
@@ -195,13 +234,15 @@ export default function Index() {
                                 Overlook hotel explodes in mysterious accident
                             </h2>
                             <p>
+                                <span className="ml-4" />
                                 "It's the offseason, so that means no one was at
                                 the hotel. Thank goodness no accidents happened
                                 while we had guests there." When asked about
                                 next steps and potential recovery of the
                                 Overlook Hotel, Ullman declined to answer,
                                 although he has agreed to an interview about
-                                "other questions not related to{" "}
+                                "other questions not related to currently
+                                unforseeable plans for the future".
                             </p>
                         </div>
                         <div className="p-7">
@@ -224,22 +265,58 @@ export default function Index() {
                                 Overlook Hotel
                             </h2>
                             <p>
-                                On Writing is Stephen King’s part writing guide,
-                                part memoir. King keeps it relatively humorous,
-                                but occasionally adds some of the dark backstory
-                                behind some of the books he’s written. Notably?
-                                I can think of two as I write this book review:
-                                getting hit by a van in 1999 and his addictions.
-                                While getting hit by a van may seem like the
-                                more interesting of the twoOn Writing is Stephen
-                                King’s part writing guide, part memoir. King
-                                keeps it relatively humorous, but occasionally
-                                adds some of the dark backstory behind some of
-                                the books he’s written. Notably? I can think of
-                                two as I write this book review: getting hit by
-                                a van in 1999 and his addictions. While getting
-                                hit by a van may seem like the more interesting
-                                of the two
+                                <span className="ml-4" />
+                                <i>
+                                    Can you tell us more about the legacy of the
+                                    hotel?
+                                </i>{" "}
+                                The Overlook was built in the years 1907 to
+                                1909. We've had many people you might consider
+                                celebrities or "famous" people stay here for the
+                                gorgeous views. Among a long list, the
+                                Vanderbilts, Rockefellers, Astors, Du Ponts.
+                                We've had four presidents stay in the
+                                Presidential Suite, Wilson, Harding, Roosevelt,
+                                and Nixon.
+                            </p>
+                            <p>
+                                <span className="ml-4" />
+                                <i>That's quite impressive.</i> Certainly.
+                            </p>
+                            <p>
+                                <span className="ml-4" />
+                                <i>
+                                    However, we've also heard... rumors of
+                                    various deaths. And the property has been
+                                    transferred quite a few times.
+                                </i>{" "}
+                                And?
+                            </p>
+                            <p>
+                                <span className="ml-4" />
+                                <i>Are they true?</i> We've had many people stay
+                                here. Accidents are expected, especially since
+                                the closest town we can get emergency help from
+                                is quite a few miles away. The winters are quite
+                                cruel, too. As for the... insinuations of the
+                                rest of your questions, I decline to answer. The
+                                records are public.
+                            </p>
+                            <p>
+                                <span className="ml-4" />
+                                <i>What do you think happened?</i> Nothing.
+                                Nothing happened. Most likely it was a freak
+                                accident.
+                            </p>
+                            <p>
+                                <span className="ml-4" />
+                                <i>
+                                    A blazing fire in the middle of winter?
+                                </i>{" "}
+                                Like I said, it was a freak accident, and
+                                unfortuanately the Overlook Hotel was destroyed
+                                in the accident. That's the end of this
+                                interview.
                             </p>
                         </div>
                     </div>

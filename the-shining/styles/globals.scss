@@ -19,6 +19,11 @@
     src: url("../public/EBGaramond-VariableItalic.ttf") format("truetype");
 }
 
+@font-face {
+    font-family: "Rhesmanisa";
+    src: url("../public/Rhesmanisa-Regular.otf") format("truetype");
+}
+
 body,
 html {
     @apply p-0;
@@ -130,4 +135,9 @@ p {
         align-items: center;
         background: radial-gradient(circle at 100px 100px, white, #cbd5e1);
     }
+}
+
+.signature {
+    font-family: "Rhesmanisa", cursive;
+    font-size: 3rem;
 }
